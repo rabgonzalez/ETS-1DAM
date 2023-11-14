@@ -1,1 +1,1 @@
-<h1> <image src="../img/Prueba.png"> </h1>
+<h1> <image src="img/Prueba.png"> </h1>
