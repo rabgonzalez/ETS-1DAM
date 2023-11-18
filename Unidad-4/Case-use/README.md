@@ -3,6 +3,9 @@
 # Ruben Abreu Gonzalez
 ### Indice
 - [Gestion Hospitalaria](#gestion-hospitalaria)
+- [Diagrama](#diagrama)
+- [Tabla actores](#tabla-actores)
+- [Tabla casos de uso](#tabla-case-use)
 
 ## Gestion Hospitalaria
 El sistema de gestión hospitalaria tiene como objetivo mejorar la eficiencia y coordinación de los procesos dentro de un hospital. En el sistema participan distantas personas, como son: Paciente, Médico, Enfermero, Administrador del Sistema y Recepcionista. A continuación, se presentan algunos casos de uso para este sistema:
@@ -31,7 +34,7 @@ Como podemos observar, el sistema tiene distintos actores, casos de uso y relaci
 ### Diagrama
 <img src="./images/Case-usetotal1.png">
 
-### Tabla
+### Tabla actores
 |  Actor | Paciente |
 |---|---|
 | Descripción  |  Un individuo que busca servicios médicos en el hospital.  |
@@ -82,18 +85,186 @@ Como podemos observar, el sistema tiene distintos actores, casos de uso y relaci
 | Autor  | rabgonalez |
 |Fecha | 15/11/2023 |
 
-|  Caso de Uso	CU | XXX  |
+### Tabla case use
+|  Caso de Uso	CU | Registra  |
 |---|---|
-| Fuentes  | _Documento que sustenta el caso de uso_  |
-| Actor  |  _Actores que participan en el caso de uso_ |
-| Descripción | _Descripción del caso de uso_  |
-| Flujo básico | _Descripción paso a paso de la ejecución. (1->2->3.)_ |
-| Pre-condiciones | _Que debe ocurrir con anterioridad_  |  
-| Post-condiciones  | _Que debe ocurrir con posterioridad_  |  
-|  Requerimientos | _Que debe de exister para que el caso de uso se ejecute. Ej: Tarjeta de crédito_  |
-|  Notas |  _Notas adicionales_ |
-| Autor  | _Quien desarrolla la especificación del actor_ |
-|Fecha | _Fecha de la especificación_ |
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Paciente |
+| Descripción | Cliente se registra en el sistema  |
+| Flujo básico | 1 |
+| Pre-condiciones |   |  
+| Post-condiciones  |   |  
+|  Requerimientos | Autenticarsinformación personal y médica  |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
 
+|  Caso de Uso	CU | Autenticarse  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Paciente, Recepcionista, Médico, Enfermero, Administrador del sistema |
+| Descripción | Todos deben de autenticarse antes de realizar cualquier acción (excepto el paciente al registrarse) |
+| Flujo básico | 1 -> 2 |
+| Pre-condiciones |   |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
 
+|  Caso de Uso	CU | Programa citas  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Paciente, Recepcionista |
+| Descripción | El paciente o la recepcionista programa citas médicas para los pacientes  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Realiza diagnostico  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Médico |
+| Descripción | El médico realiza diagnósticos  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Prescribe tratamientos  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Médico |
+| Descripción | El médico prescribe tratamientos  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Registra información del paciente  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Médico |
+| Descripción | El médico registra la información del paciente  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Acceder al historial  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Médico, Enfermero |
+| Descripción | El médico y el enfermero pueden acceder a el historial médico del paciente  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Actualizar al historial  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Médico, Enfermero |
+| Descripción | El médico y el enfermero pueden actualizar el historial médico del paciente  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Asignar tarea  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Administrador del sistema |
+| Descripción | El personal administrativo realiza tareas relacionadas con la facturación y el procesamiento del seguro médico  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Realiza configuraciones  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Administrador del sistema |
+| Descripción | El administrador del sistema realiza configuraciones del sistema  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Realiza actualizaciones  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Administrador del sistema |
+| Descripción | El administrador del sistema realiza actualizaciones del sistema  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Realiza tareas del seguro médico  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Administrador del sistema |
+| Descripción | El médico asigna tareas específicas a los enfermeros relacionadas con la atención del paciente  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Gestiona recursos hospitalarios  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Administrador del sistema |
+| Descripción | El administrador del sistema gestiona los recursos hospitalarios, como camas, equipos médicos y suministros  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
+
+|  Caso de Uso	CU | Realiza tarea  |
+|---|---|
+| Fuentes  | [Case use](https://github.com/rabgonzalez/ets/tree/main/Unidad-4/Case-use)  |
+| Actor  |  Enfermero |
+| Descripción | Los enfermeros realizan tareas específicas relacionadas con la atención del paciente  |
+| Flujo básico | 1 |
+| Pre-condiciones | Autenticarse  |  
+| Post-condiciones  |   |  
+|  Requerimientos |   |
+|  Notas |   |
+| Autor  | rabgonzalez |
+|Fecha | 18/11/2023 |
 </div>
